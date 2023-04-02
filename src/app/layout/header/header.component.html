@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+    <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="active text-warning border-danger border-bottom"
+        [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/introduction']"
+                    routerLinkActive="active text-warning border-danger border-bottom">Introduction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/personal-info']"
+                    routerLinkActive="active text-warning border-danger border-bottom">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/projects']"
+                    routerLinkActive="active text-warning border-danger border-bottom">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/contact-details']"
+                    routerLinkActive="active text-warning border-danger border-bottom">Contact Me</a>
+            </li>
+        </ul>
+    </div>
+</nav>

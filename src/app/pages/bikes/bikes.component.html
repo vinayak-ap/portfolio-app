@@ -1,0 +1,19 @@
+<div class="container" style="height: 473px">
+    <h1 class="display-4 text-center mt-3">Bike Mania</h1>
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr class="bg-dark text-white">
+                <th scope="col">Bike Name</th>
+                <th scope="col">Country</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody class="bg-light">
+            <tr *ngFor="let bike of bikesInfo">
+                <td class="col-md-4">{{ bike.bikeName | uppercase }}</td>
+                <td class="col-md-3">{{ bike.country | titlecase }}</td>
+                <td class="col-md-3">{{ bike.price }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
