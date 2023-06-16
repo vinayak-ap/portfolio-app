@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
-import { arrBikesInfo } from 'src/utilities/bikes-info';
-import { arrCarsInfo } from 'src/utilities/cars-info';
+// import { arrBikesInfo } from 'src/app/helper/bikes-info';
+// import { arrCarsInfo } from 'src/app/helper/cars-info';
 
 @Injectable({
     providedIn: 'root',
 })
 export class VehicleService {
-    constructor() {}
+    constructor() { }
 
-    displayBikesInfo(): {} {
-        return arrBikesInfo;
-    }
+    // displayBikesInfo(): {} {
+    //     return arrBikesInfo;
+    // }
 
-    displayCarsInfo(): {} {
-        return arrCarsInfo;
-    }
+    // displayCarsInfo(): {} {
+    //     return arrCarsInfo;
+    // }
 }

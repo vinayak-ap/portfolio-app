@@ -9,9 +9,9 @@ import { VehicleService } from 'src/app/services/vehicle.service';
 export class CarsComponent implements OnInit {
     carsInfo = {};
 
-    constructor(private vehicleService: VehicleService) {}
+    constructor(private vehicleService: VehicleService) { }
 
     ngOnInit(): void {
-        this.carsInfo = this.vehicleService.displayCarsInfo();
+        // this.carsInfo = this.vehicleService.displayCarsInfo();
     }
 }

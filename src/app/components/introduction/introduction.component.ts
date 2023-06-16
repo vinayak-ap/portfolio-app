@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { PortfolioHelper } from "../../helper/portfolio.helper";
+import Typewriter from 't-writer.js'
 
 @Component({
   selector: 'app-introduction',
@@ -7,9 +9,71 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroductionComponent implements OnInit {
 
+  @ViewChild('textStatic') textStatic;
+  @ViewChild('textTyping') textTyping;
+
+  arrIntroduction: Array<string> = PortfolioHelper.arrIntroduction;
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() { }
+
+  ngAfterViewInit() {
+    this.initTypeWriter();
   }
 
-}
+  initTypeWriter() {
+    let textStatic = this.textStatic.nativeElement;
+    let textTyping = this.textTyping.nativeElement;
+
+    const writerTextStatic = new Typewriter(textStatic, {
+      typeSpeed: 60
+    })
+
+    const writerTextTyping = new Typewriter(textTyping, {
+      typeSpeed: 60
+    })
+
+    writerTextStatic
+      .type('Combo typewriters to')
+      .removeCursor()
+      .then(writerTextTyping.start.bind(writerTextTyping))
+      .start()
+
+    writerTextTyping
+      .type("create complex effects")
+      .rest(500)
+      .clear()
+      .changeTypeColor('red')
+      .type("defy user expectations")
+      .rest(500)
+      .clear()
+      .changeTypeColor('blue')
+      .type("generate a custom loop")
+      .rest(500)
+      .clear()
+      .changeTypeColor('black')
+      .removeCursor()
+      .then(writerTextStatic.start.bind(writerTextStatic))
+
+    // writerTextTyping.strings(
+    //   400,
+    //   "Set many strings",
+    //   "In just one call",
+    //   "Using the 'strings' method"
+    // )
+    //   .changeTypeColor('red')
+    //   .start()
+    //   .rest(500)
+    //   .clear()
+    //   .changeTypeColor('black')
+    //   .then(writerTextStatic.start.bind(writerTextStatic))
+  }
+
+
+};
+
+
+
+
+
