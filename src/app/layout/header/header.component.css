@@ -1,0 +1,23 @@
+.navbar{
+    background-color: #1A1C19;
+}
+.choices__inner{
+    min-height: 70px;
+    width: 100%;
+    background: 0 0;
+    border: 0;
+    background: #fff;
+    display: block;
+    width: 100%;
+    padding: 10px 70px 10px 32px;
+    font-size: 18px;
+    color: #666;
+    border-radius: 34px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+}
+

@@ -35,21 +35,24 @@ export class IntroductionComponent implements OnInit {
     })
 
     writerTextStatic
-      .type('Combo typewriters to')
+      .type('Hello, I am Rohit Pathare')
       .removeCursor()
       .then(writerTextTyping.start.bind(writerTextTyping))
       .start()
 
     writerTextTyping
-      .type("create complex effects")
+      .type('Software Engineer')
       .rest(500)
       .clear()
       .changeTypeColor('red')
-      .type("defy user expectations")
+      .type('UI Developer')
       .rest(500)
       .clear()
       .changeTypeColor('blue')
-      .type("generate a custom loop")
+      .type('I am creative')
+      .rest(500)
+      .clear()
+      .type('I love to design and develop')
       .rest(500)
       .clear()
       .changeTypeColor('black')
