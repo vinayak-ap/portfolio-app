@@ -24,11 +24,11 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
               "src/styles.css",
               "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": [
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "portfolio-app"
+  "defaultProject": "portfolio-app",
+  "cli": {
+    "analytics": "22ca21ae-b942-4595-a1ce-364733d0c0c5"
+  }
 }

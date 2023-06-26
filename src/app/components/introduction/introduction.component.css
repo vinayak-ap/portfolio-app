@@ -1,3 +1,16 @@
 .container{
     background-color: #1A1C19;
 }
+#title{
+    font-family: "Comic Sans MS",sans-serif;
+    color: yellow;
+}
+.card{
+    background-color:  #343a40!important;
+    padding: 100px;
+    
+}
+.hireme{
+    background-color: yellow
+    
+}
