@@ -1,2 +1,54 @@
-<p>comp-contact-details works!</p>
-<h1>works</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <h1>Contact Me</h1>
+    <p>Thank you for visiting my portfolio website. I'd be happy to hear from you and answer any questions you may have.
+        Feel free to reach out to me using the contact details below:</p>
+
+    <h2>Personal Information</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="[Your Full Name]" readonly><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="[Your Email Address]" readonly><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" value="[Your Phone Number]" readonly><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" value="[Your City, State/Province, Country]" readonly><br>
+    </form>
+
+    <h2>Social Media</h2>
+    <ul>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/your-profile">LinkedIn Profile</a></li>
+        <li><strong>Twitter:</strong> <a href="https://twitter.com/your-profile">Twitter Profile</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/your-profile">GitHub Profile</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/your-profile">Instagram Profile</a></li>
+    </ul>
+
+    <h2>Contact Form</h2>
+    <p>If you prefer, you can also use the contact form below to send me a direct message. Just fill in the required
+        fields, and I'll get back to you promptly.</p>
+
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+        <input type="submit" value="Send Message">
+    </form>
+</body>
+
+</html>
