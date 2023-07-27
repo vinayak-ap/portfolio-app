@@ -1,16 +1,16 @@
 .container-fluid {
     background-image: url("/assets/bike_img.jpg");
-    background-color: #1A1C19;
+    /* background-color: #1A1C19; */
 }
 .container{
-    background-color: #1A1C19;
+    /* background-color: #1A1C19; */
 }
 #title{
     font-family: "Comic Sans MS",sans-serif;
     color: yellow;
 }
 .card{
-    background-color:  #343a40!important;
+    /* background-color:  #343a40!important; */
     padding: 100px;
     
 }
