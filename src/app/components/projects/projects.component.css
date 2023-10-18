@@ -1,8 +1,3 @@
-.projects {
-  /* background-color: #343a40 !important; */
-  padding: 50px;
-}
-
 #title {
   font-family: "Comic Sans MS", sans-serif;
   color: yellow;
@@ -12,14 +7,13 @@
   background-color: #0c0c0b10 !important;
 }
 
-.card-title {
-  /* color: yellow !important; */
-}
-
 .card-deck {
   margin-top: 10px;
 }
 
+/*************************************************/
+/* Shake Effect */
+/*************************************************/
 .card-shake:hover {
   animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
   transform: translate3d(0, 0, 0);
@@ -48,5 +42,38 @@
   40%,
   60% {
     transform: translate3d(4px, 0, 0);
+  }
+}
+
+/*************************************************/
+/* Tilt Effect */
+/*************************************************/
+.card-tilt {
+  transition: transform 0.25s ease-in-out;
+}
+
+.card-tilt:hover {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(2deg);
+  /* Adjust the rotation values for the desired tilt effect */
+}
+
+/*************************************************/
+/* Pulse Effect */
+/*************************************************/
+.pulse-card:hover {
+  animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.01);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }

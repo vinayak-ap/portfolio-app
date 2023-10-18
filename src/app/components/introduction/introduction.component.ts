@@ -38,7 +38,7 @@ export class IntroductionComponent implements OnInit {
       .changeCursorColor('white') // Set the cursor color to yellow
 
       .changeTypeColor('white')
-      .type('Hello, I am Rohit Pathare')
+      .type('Hello, I am Vinayak Atugade - Patil')
       .removeCursor()
       .then(writerTextTyping.start.bind(writerTextTyping))
       .start()
