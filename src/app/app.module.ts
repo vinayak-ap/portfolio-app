@@ -12,6 +12,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 
 /* -- Components -- */
 import { PersonalInfoComponent } from './components/personal-info/personal-info.component';
+import { CertificationsComponent } from './components/certifications/certifications.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { IntroductionComponent } from './components/introduction/introduction.component';
 import { ContactDetailsComponent } from './components/contact-details/contact-details.component';
@@ -32,6 +33,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 
         /* -- Components -- */
         PersonalInfoComponent,
+        CertificationsComponent,
         ProjectsComponent,
         IntroductionComponent,
         ContactDetailsComponent,

@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 /* -- Components Import -- */
 import { IntroductionComponent } from './components/introduction/introduction.component';
 import { PersonalInfoComponent } from './components/personal-info/personal-info.component';
+import { CertificationsComponent } from './components/certifications/certifications.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactDetailsComponent } from './components/contact-details/contact-details.component';
 
@@ -20,8 +21,8 @@ const routes: Routes = [
     { path: 'bikes', component: BikesComponent },
 
     //-- Components
-    { path: 'introduction', component: IntroductionComponent },
     { path: 'personal-info', component: PersonalInfoComponent },
+    { path: 'certifications', component: CertificationsComponent },
     { path: 'projects', component: ProjectsComponent },
     { path: 'contact-details', component: ContactDetailsComponent },
 
