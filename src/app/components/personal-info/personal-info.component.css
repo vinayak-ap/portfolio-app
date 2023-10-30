@@ -1,0 +1,50 @@
+.table {
+    width: 200px;
+    margin-bottom: 0rem;
+}
+
+.table td {
+    padding: 0rem;
+}
+
+.list-group .list-group-item .font-weight-bold {
+    width: 20%;
+}
+
+
+/* Adding colours for icons */
+
+.fa-linkedin {
+    color: rgb(19, 106, 150);
+}
+
+.fa-github {
+    color: black
+}
+
+.fab.fa-instagram {
+    color: #bc2a8d;
+}
+
+.fab.fa-whatsapp {
+    color: green;
+}
+
+.fab.fa-gitlab {
+    color: #fc6d26;
+}
+
+/* Effect for button expansion */
+button span {
+    max-width: 0;
+    -webkit-transition: max-width 1s;
+    transition: max-width 0.7s;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+button:hover span {
+    max-width: 7rem;
+}

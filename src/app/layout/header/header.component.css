@@ -1,7 +1,9 @@
-.navbar{
-    background-color: #1A1C19;
+.navbar {
+    /* background-color: #26272c; */
+    /* background-color: #1A1C19; */
 }
-.choices__inner{
+
+.choices__inner {
     min-height: 70px;
     width: 100%;
     background: 0 0;
@@ -20,4 +22,3 @@
     -ms-flex-align: center;
     align-items: center;
 }
-

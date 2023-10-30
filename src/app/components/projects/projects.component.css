@@ -11,6 +11,20 @@
   margin-top: 10px;
 }
 
+a span {
+  max-width: 0;
+  -webkit-transition: max-width 1s;
+  transition: max-width 1s;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+a:hover span {
+  max-width: 7rem;
+}
+
 /*************************************************/
 /* Shake Effect */
 /*************************************************/

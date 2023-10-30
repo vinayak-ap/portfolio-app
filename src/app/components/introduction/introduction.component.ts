@@ -35,9 +35,9 @@ export class IntroductionComponent implements OnInit {
     })
 
     writerTextStatic
-      .changeCursorColor('white') // Set the cursor color to yellow
+      .changeCursorColor('black') // Set the cursor color to yellow
 
-      .changeTypeColor('white')
+      .changeTypeColor('black')
       .type('Hello, I am Vinayak Atugade - Patil')
       .removeCursor()
       .then(writerTextTyping.start.bind(writerTextTyping))
@@ -45,24 +45,24 @@ export class IntroductionComponent implements OnInit {
 
 
     writerTextTyping
-      .changeCursorColor('yellow') // Set the cursor color to yellow
+      .changeCursorColor('grey') // Set the cursor color to yellow
 
-      .changeTypeColor('yellow')
+      .changeTypeColor('grey')
       .type('Software Engineer')
       .rest(500)
       .clear()
-      .changeTypeColor('yellow')
+      .changeTypeColor('grey')
       .type('UI Developer')
       .rest(500)
       .clear()
-      .changeTypeColor('yellow')
+      .changeTypeColor('grey')
       .type('I am creative')
       .rest(500)
       .clear()
       .type('I love to design and develop')
       .rest(500)
       .clear()
-      .changeTypeColor('yellow')
+      .changeTypeColor('grey')
       .removeCursor()
       .then(writerTextStatic.start.bind(writerTextStatic))
 
