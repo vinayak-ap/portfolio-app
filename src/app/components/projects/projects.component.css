@@ -25,6 +25,26 @@ a:hover span {
   max-width: 7rem;
 }
 
+.blur-cards {
+  flex-wrap: wrap;
+}
+
+.blur-cards .blur-card {
+  transition: all ease-out 0.5s;
+}
+
+.blur-cards:hover .blur-card {
+  filter: blur(15px);
+  transform: scale(1);
+  opacity: 0.5;
+}
+
+.blur-cards .blur-card:hover {
+  filter: blur(0px);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
 /*************************************************/
 /* Shake Effect */
 /*************************************************/
